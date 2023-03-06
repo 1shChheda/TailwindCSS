@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        mammoth : ['8rem', { lineHeight: '5rem' }]
+      }
+    },
   },
   plugins: [],
 }
