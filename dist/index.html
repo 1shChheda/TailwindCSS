@@ -6,8 +6,28 @@
   <!-- <link href="output.css" rel="stylesheet"> -->
   <script src="https://cdn.tailwindcss.com"></script>
   <title>TailWind WebPage</title>
+
+  <!-- Since using TailwindCSS CDN  -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Space+Mono&display=swap');
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontSize: {
+            mammoth : ['8rem', { lineHeight: '5rem' }]
+          },
+          fontFamily: {
+            audiowide: ['Audiowide']
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
-<body class="text-slate-600">
+<body class="text-slate-600 font-audiowide">
   
   <div> <!-- Content Wrapper -->
     <div>
@@ -44,7 +64,7 @@
       </div>
       
       <header>
-        <h2 class="text-gray-900 text-6xl font-semibold">Recipes</h2>
+        <h2 class="text-gray-900 text-6xl font-semibold font-serif">Recipes</h2>
         <h3 class="text-3xl font-semibold">For Foodies</h3>
       </header>
 
