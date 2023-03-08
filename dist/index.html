@@ -19,7 +19,8 @@
             mammoth : ['8rem', { lineHeight: '5rem' }]
           },
           fontFamily: {
-            audiowide: ['Audiowide']
+            audiowide: ['Audiowide'],
+            spaceMono: ['Space Mono']
           }
         }
       }
@@ -27,13 +28,13 @@
   </script>
 
 </head>
-<body class="text-slate-600 font-audiowide">
+<body class="text-gray-600 bg-gray-100 font-spaceMono">
   
   <div> <!-- Content Wrapper -->
     <div>
       <nav>
         <div>
-          <h1 class="text-mammoth hover:text-green-600 font-bold uppercase p-4 border-b border-gray-100">
+          <h1 class="text-mammoth leading-none font-bold font-audiowide uppercase p-4 border-b border-gray-100">
             <a href="/">Chef's Kitchen</a>
           </h1>
         </div>
@@ -61,7 +62,7 @@
       <!-- justify-content : positions the entire div elements along the main container's axis -->
       <!-- justify-items : positions the div elements along their respective inline axis (x-axis) --> 
       <!-- align-items : positions the div elements along their respective cross axis (y-axis) -->
-      <div class="flex justify-end"> <!-- top right of the page -->
+      <div class="flex justify-center md:justify-end"> <!-- top right of the page -->
         <a href="#">Log In</a>
         <a href="#" class="ml-2">Sign Up</a>
       </div>
@@ -74,13 +75,13 @@
       <div>
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Latest Recipes</h4>
 
-        <div class="mt-8 border">
-          <div> <!-- cards go here -->
-            <img src="img/curry.jpg" alt="">
+        <div class="mt-8">
+          <div class="bg-neutral-50 rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+            <img src="img/curry.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
             <!-- <div class="capitalize flex flex-col justify-start"> -->
-            <div class="capitalize">
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe by Vansh</span>
+            <div class="capitalize m-4">
+              <span class="font-bold">5 Bean Chilli Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Vansh</span>
             </div>
           </div>
         </div>
