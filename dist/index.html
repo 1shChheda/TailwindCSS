@@ -30,11 +30,11 @@
 </head>
 <body class="text-gray-600 bg-gray-100 font-spaceMono">
   
-  <div> <!-- Content Wrapper -->
-    <div>
+  <div class="grid md:grid-cols-4"> <!-- Content Wrapper -->
+    <div class="md:col-span-1">
       <nav>
         <div>
-          <h1 class="text-mammoth leading-none font-bold font-audiowide uppercase p-4 border-b border-gray-100">
+          <h1 class="text-2xl leading-none font-bold font-audiowide uppercase p-4 border-b border-gray-100">
             <a href="/">Chef's Kitchen</a>
           </h1>
         </div>
@@ -58,13 +58,13 @@
       </nav>
     </div> <!-- End Nav -->
 
-    <main class="px-16 py-6">
+    <main class="px-16 py-6 md:col-span-3">
       <!-- justify-content : positions the entire div elements along the main container's axis -->
       <!-- justify-items : positions the div elements along their respective inline axis (x-axis) --> 
       <!-- align-items : positions the div elements along their respective cross axis (y-axis) -->
       <div class="flex justify-center md:justify-end"> <!-- top right of the page -->
-        <a href="#">Log In</a>
-        <a href="#" class="ml-2">Sign Up</a>
+        <a class="py-2 px-3 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2" href="#">Log In</a>
+        <a class="py-2 px-3 ml-2 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2" href="#">Sign Up</a>
       </div>
       
       <header>
@@ -75,14 +75,41 @@
       <div>
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Latest Recipes</h4>
 
-        <div class="mt-8">
-          <div class="bg-neutral-50 rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
-            <img src="img/curry.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+        <div class="mt-8 grid lg:grid-cols-3 gap-8">
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+            <img src="img/curry.jpg" alt="paneer" class="w-full h-32 sm:h-48 object-cover">
             <!-- <div class="capitalize flex flex-col justify-start"> -->
             <div class="capitalize m-4">
-              <span class="font-bold">5 Bean Chilli Stew</span>
-              <span class="block text-gray-500 text-sm">Recipe by Vansh</span>
+              <span class="font-bold">5 Paneer Chilli Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Vansh Chheda</span>
             </div>
+            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <span>25 Mins</span>
+            </div>  
+          </div>
+          
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+            <img src="img/pasta.jpg" alt="pasta" class="w-full h-32 sm:h-48 object-cover">
+            <!-- <div class="capitalize flex flex-col justify-start"> -->
+            <div class="capitalize m-4">
+              <span class="font-bold">Rigatoni Bolognese</span>
+              <span class="block text-gray-500 text-sm">Recipe by Jamie Oliver</span>
+            </div>
+            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <span>35 Mins</span>
+            </div>  
+          </div>
+
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+            <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+            <!-- <div class="capitalize flex flex-col justify-start"> -->
+            <div class="capitalize m-4">
+              <span class="font-bold">Chowmein Noodles</span>
+              <span class="block text-gray-500 text-sm">Recipe by Gordan Ramsay</span>
+            </div>
+            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <span>20 Mins</span>
+            </div>  
           </div>
         </div>
 
