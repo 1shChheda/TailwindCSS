@@ -28,47 +28,53 @@
   </script>
 
 </head>
-<body class="text-gray-600 bg-gray-100 font-spaceMono">
+<body class="text-gray-600 font-spaceMono">
   
   <div class="grid md:grid-cols-4"> <!-- Content Wrapper -->
-    <div class="md:col-span-1">
-      <nav>
-        <div>
+    <div class="md:col-span-1 md:flex md:justify-end"> <!-- Start Nav -->
+      <nav class="text-right">
+        <div class="flex justify-between items-center">
           <h1 class="text-2xl leading-none font-bold font-audiowide uppercase p-4 border-b border-gray-100">
             <a class="hover:text-gray-800" href="/">Chef's Kitchen</a>
           </h1>
+          <div class="px-4 cursor-pointer md:hidden" id="menuIcon">
+            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+          </div>
         </div>
-        <ul>
-          <li class="text-gray-700 font-bold">
-            <a class="flex items-center" href="#">
-              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
+          <li class="text-gray-700 font-bold py-1">
+            <a class="px-4 flex justify-end border-r-4 border-violet-800" href="#">
+              <span>Home</span>
+              <svg class="w-5 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
               </svg>
-              <span>Home</span>
             </a>
           </li>
-          <li>
-            <a class="flex items-center" href="#">
-              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <li class="py-1">
+            <a class="px-4 flex justify-end border-r-4 border-transparent" href="#">
+              <span>About</span>
+              <svg class="w-5 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
               </svg>
               
-              <span>About</span>
             </a>
           </li>
-          <li>
-            <a class="flex items-center" href="#">
-              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <li class="py-1">
+            <a class="px-4 flex justify-end border-r-4 border-transparent" href="#">
+              <span>Contact</span>
+              <svg class="w-5 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
               </svg>                   
-              <span>Contact Us</span>
             </a>
           </li>
         </ul>
       </nav>
     </div> <!-- End Nav -->
 
-    <main class="px-16 py-6 md:col-span-3">
+    <main class="px-16 py-6 bg-gray-100 md:col-span-3">
       <!-- justify-content : positions the entire div elements along the main container's axis -->
       <!-- justify-items : positions the div elements along their respective inline axis (x-axis) --> 
       <!-- justify-self : applied on individual grid elements, in case you want them to align differently on their respective inline axis -->
@@ -76,8 +82,8 @@
       <!-- align-items : positions the div elements along their respective cross axis (y-axis) -->
       <!-- justify-self : applied on individual grid elements, in case you want them to align differently on their respective inline axis -->
       <div class="flex justify-center md:justify-end"> <!-- top right of the page -->
-        <a class="py-2 px-3 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50" href="#">Log In</a>
-        <a class="py-2 px-3 ml-2 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50" href="#">Sign Up</a>
+        <a class="py-2 px-3 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50 transition ease-out duration-500" href="#">Log In</a>
+        <a class="py-2 px-3 ml-2 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50 transition ease-out duration-500" href="#">Sign Up</a>
       </div>
       
       <header>
@@ -89,7 +95,7 @@
         <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">Latest Recipes</h4>
 
         <div class="mt-8 grid lg:grid-cols-3 gap-8">
-          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden hover:shadow-xl"> <!-- cards go here -->
             <img src="img/curry.jpg" alt="paneer" class="w-full h-32 sm:h-48 object-cover">
             <!-- <div class="capitalize flex flex-col justify-start"> -->
             <div class="capitalize m-4">
@@ -105,7 +111,7 @@
             </div>  
           </div>
           
-          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden hover:shadow-xl"> <!-- cards go here -->
             <img src="img/pasta.jpg" alt="pasta" class="w-full h-32 sm:h-48 object-cover">
             <!-- <div class="capitalize flex flex-col justify-start"> -->
             <div class="capitalize m-4">
@@ -120,7 +126,7 @@
             </div>  
           </div>
 
-          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden"> <!-- cards go here -->
+          <div class="bg-neutral-50 relative rounded-md shadow-md overflow-hidden hover:shadow-xl"> <!-- cards go here -->
             <img src="img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
             <!-- <div class="capitalize flex flex-col justify-start"> -->
             <div class="capitalize m-4">
@@ -142,13 +148,13 @@
 
         </div>
 
-        <div>
-          <div>Load More</div>
+        <div class="text-center">
+          <div class="inline py-2 px-3 ml-2 text-zinc-700 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-stone-300 md:border-2 hover:bg-stone-300 hover:shadow-inner transform hover:scale-125">Load More</div>
         </div>
 
       </div>
     </main>
   </div>
-  
+  <script src="app.js"></script>
 </body>
 </html>
