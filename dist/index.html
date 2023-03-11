@@ -35,22 +35,32 @@
       <nav>
         <div>
           <h1 class="text-2xl leading-none font-bold font-audiowide uppercase p-4 border-b border-gray-100">
-            <a href="/">Chef's Kitchen</a>
+            <a class="hover:text-gray-800" href="/">Chef's Kitchen</a>
           </h1>
         </div>
         <ul>
           <li class="text-gray-700 font-bold">
-            <a href="#">
+            <a class="flex items-center" href="#">
+              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
               <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="flex items-center" href="#">
+              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+              </svg>
+              
               <span>About</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="flex items-center" href="#">
+              <svg class="w-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>                   
               <span>Contact Us</span>
             </a>
           </li>
@@ -61,10 +71,13 @@
     <main class="px-16 py-6 md:col-span-3">
       <!-- justify-content : positions the entire div elements along the main container's axis -->
       <!-- justify-items : positions the div elements along their respective inline axis (x-axis) --> 
+      <!-- justify-self : applied on individual grid elements, in case you want them to align differently on their respective inline axis -->
+      <!-- align content : used in grid. positions the all grid elements (all together) on the cross axis -->
       <!-- align-items : positions the div elements along their respective cross axis (y-axis) -->
+      <!-- justify-self : applied on individual grid elements, in case you want them to align differently on their respective inline axis -->
       <div class="flex justify-center md:justify-end"> <!-- top right of the page -->
-        <a class="py-2 px-3 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2" href="#">Log In</a>
-        <a class="py-2 px-3 ml-2 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2" href="#">Sign Up</a>
+        <a class="py-2 px-3 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50" href="#">Log In</a>
+        <a class="py-2 px-3 ml-2 text-violet-800 text-xs uppercase font-bold rounded-full cursor-pointer tracking-wider border-violet-800 md:border-2 hover:bg-violet-800 hover:text-slate-50" href="#">Sign Up</a>
       </div>
       
       <header>
@@ -83,7 +96,11 @@
               <span class="font-bold">5 Paneer Chilli Stew</span>
               <span class="block text-gray-500 text-sm">Recipe by Vansh Chheda</span>
             </div>
-            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+            <div class="flex items-center bg-stone-200 hover:bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <svg class="w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              
               <span>25 Mins</span>
             </div>  
           </div>
@@ -95,7 +112,10 @@
               <span class="font-bold">Rigatoni Bolognese</span>
               <span class="block text-gray-500 text-sm">Recipe by Jamie Oliver</span>
             </div>
-            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+            <div class="flex items-center bg-stone-200 hover:bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <svg class="w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <span>35 Mins</span>
             </div>  
           </div>
@@ -107,7 +127,10 @@
               <span class="font-bold">Chowmein Noodles</span>
               <span class="block text-gray-500 text-sm">Recipe by Gordan Ramsay</span>
             </div>
-            <div class="bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+            <div class="flex items-center bg-stone-200 hover:bg-slate-100 text-zinc-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <svg class="w-5 mr-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <span>20 Mins</span>
             </div>  
           </div>
@@ -126,6 +149,6 @@
       </div>
     </main>
   </div>
-
+  
 </body>
 </html>
