@@ -42,10 +42,9 @@
                 </button>
                 <nav class=" hidden md:block space-x-4 text-2xl font-orbitron tracking-wide">
                     
-                        <!-- <a href="#" class="py-2 px-3 uppercase
-                        hover:font-bold active:font-bold rounded-full cursor-pointer hover:border-teal-100 hover:border-2 focus:border-2 hover:bg-teal-100 active:bg-teal-100 hover:text-gray-800 transition ease-out duration-500">Home</a> -->
-                        <a class="hover:opacity-90" href="#home">Home</a>
-                        <a class="hover:opacity-90" href="#departments">Departments</a>
+                        <a href="#" class="py-2 px-3 hover:font-bold active:font-bold rounded-full cursor-pointer hover:border-teal-100 hover:border-2 focus:border-2 hover:bg-teal-100 active:bg-teal-100 hover:text-gray-800 transition ease-out duration-500">Home</a>
+                        <!-- <a class="hover:opacity-90" href="#home">Home</a> -->
+                        <a class="py-2 px-3 hover:font-bold active:font-bold rounded-full cursor-pointer hover:border-teal-100 hover:border-2 focus:border-2 hover:bg-teal-100 active:bg-teal-100 hover:text-gray-800 transition ease-out duration-500" href="#departments">Departments</a>
                         <a class="hover:opacity-90" href="#achievements">Achievements</a>
                         <a class="hover:opacity-90" href="#">Team</a>
                 </nav>
@@ -62,7 +61,7 @@
 
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">We participate each year at the annual <span class="text-blue-400 dark:text-cyan-400"><a href="https://www.cansatcompetition.com">International Cansat Competition</a></span> , conducted by the American Astronomical Society (AAS) in collaboration with NASA.</p>
             </article>
-            <img class="w-1/2" src="img/djs_arya_logo1.png" alt="">
+            <img class="w-1/2" src="img/djs_arya_logo1.png" alt="ARYA_LOGO">
         </section>
 
         <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-1/2">
@@ -70,8 +69,8 @@
         <section id="departments" class="p-6 my-12 scroll-mt-20">
             <h2 class="text-4xl font-orbitron uppercase tracking-wider font-bold text-center sm:text-5xl mb-6 text-gray-900 dark:text-slate-50">Departments</h2>
             <!-- <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"></ul> -->
-                <div class="max-w-xl md:max-w-5xl mx-auto mt-10 grid md:grid-cols-3 gap-8">
-                    <div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
+                <div class="max-w-xl md:max-w-5xl mx-auto grid md:grid-cols-3 gap-8 my-14"> <!-- Department cards go here -->
+                    <a href="#electronics"><div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
                         <svg class="w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#38bdf8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" />
                           </svg>
@@ -79,9 +78,9 @@
                             <h2 class="text-2xl sm:text-3xl font-audiowide uppercase">Electronics</h2>
                             <p class="text-base sm:text-lg">The Electronics Department tests, calibrates and integrates the system design of the CanSat along with looking after uninterrupted communication and intensive testing.</p>
                         </div>  
-                    </div>
+                    </div></a>
 
-                    <div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
+                    <a href="#coding"><div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
                         <svg class="w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#38bdf8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
                         </svg>
@@ -89,9 +88,9 @@
                             <h2 class="text-2xl sm:text-3xl font-audiowide uppercase">Coding</h2>
                             <p class="text-base sm:text-lg">The Coding Department looks after the programming aspects of the Graphic User Interface which displays the real time plotting of data recieved from the sensors present in the CanSat.</p>
                         </div>  
-                    </div>
+                    </div></a>
 
-                    <div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
+                    <a href="#mechanical"><div class="flex flex-col items-center gap-2 bg-slate-50 dark:bg-black border border-solid border-gray-800 dark:border-slate-100 hover:bg-slate-50 hover:text-gray-900 rounded-md p-4 text-center shadow-md hover:shadow-xl transition ease-out duration-500">
                         <svg class="w-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
                           </svg>                          
@@ -99,8 +98,111 @@
                             <h2 class="text-2xl sm:text-3xl font-audiowide uppercase">Mechanical</h2>
                             <p class="text-base sm:text-lg">The Mechanical Department caters to the testing, manufacturing and designings an aerodynamically sound CanSat which is tested for maximum efficiency.</p>
                         </div>  
-                    </div>
+                    </div></a>
                 </div>
+
+                <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-2/5">
+
+                <div id="electronics" class="flex flex-col justify-center sm:flex-row p-6 items-center gap-10 my-10 text-gray-900 dark:text-white scroll-mt-20">
+                    <img class="w-1/2" src="img/elex-theme.png" alt="elex-theme">
+                    <article class="sm:w-1/2">
+                        <h2 class="sm:max-w-md font-orbitron tracking-wide text-2xl font-semibold text-center sm:text-3xl sm:text-left mb-2">
+                            The Electronics Team
+                        </h2>
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path d="M12.5 2v15M12.5 14l5.5-2V8.5M12.5 16L7 14.5v-3M12.5 22a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM16.5 5.5v3h3v-3h-3zM10.5 4l2-2 2 2M7 11a2 2 0 100-4 2 2 0 000 4z" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">The Electronics department tests, designs and manufactures all the electronics of the CanSat design and ensures that they meet with the optimal results.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM12 7v3M14 14h3M7 14h3" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">The members collaborate for the optimum sensor selection and it's testing for the proposed CanSat, followed by calibration and integration with the help of a structured code. which are then integrated together on a PCB, designed and manufactured by the Electronics department.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8"><path d="M7 16V3.6a.6.6 0 01.6-.6h8.8a.6.6 0 01.6.6V16M7 16h2m-2 0H5m12 0h-2m2 0h2m-7 0v6m0-6H9m3 0h3m-6 0v6m6-6v6" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">The department also overlooks the communication and telemetry of all the sensor collected data.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-2/5">
+                
+                <div id="coding" class="flex flex-col justify-center sm:flex-row-reverse p-6 items-center gap-10 my-10 text-gray-900 dark:text-white scroll-mt-20">
+                    <img class="w-1/2" src="img/coding-theme.png" alt="coding-theme">
+                    <article class="sm:w-1/2">
+                        <h2 class="sm:max-w-md font-orbitron tracking-wide text-2xl font-semibold text-center sm:text-3xl sm:text-left mb-2">
+                            The Coding Team
+                        </h2>
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6zM7.5 6h.008v.008H7.5V6zm2.25 0h.008v.008H9.75V6z" />
+                              </svg>
+                              
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">The main aspects of Coding department revolve around the concepts of communication and data-transfer. Along with developing the Graphical User interface (GUI) for live plotting of the telemetry data, it is also responsible for maintaining the logs in CSV.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+                              </svg>                              
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">This department's primary responsibility is to ensure successful wireless transmission and relay communication of sensor data between the payloads, container, and ground station.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8"><path d="M9 21H8c-1.105 0-2-.894-2-1.999V14c0-1-1.5-2-1.5-2S6 11 6 10V5a2 2 0 012-2h1M15 21h1c1.105 0 2-.894 2-1.999V14c0-1 1.5-2 1.5-2S18 11 18 10V5a2 2 0 00-2-2h-1" stroke="38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">Being in charge of subsystem code compilation and finalization of algorithms,programming languages ,acceptable telemetry format and developement environments to be utilised are also decided here.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-2/5">
+
+                <div id="mechanical" class="flex flex-col justify-center sm:flex-row p-6 items-center gap-10 my-10 text-gray-900 dark:text-white scroll-mt-20">
+                    <img class="w-1/2" src="img/mech-theme.png" alt="mech-theme">
+                    <article class="sm:w-1/2">
+                        <h2 class="sm:max-w-md font-orbitron tracking-wide text-2xl font-semibold text-center sm:text-3xl sm:text-left mb-2">
+                            The Mechanical Team
+                        </h2>
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008z" />
+                              </svg>                              
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">We learn every aspect of the CanSat design in the mechanical department of DJS Arya and ensure that the best results are achieved.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+                              </svg>
+                              
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">The department performs a significant role in CanSat designing, manufacturing, from selecting the correct materials to assembling the physical components, to delivering a streamlined, aerodynamic result.</p>
+                        </div>
+
+                        <div class="flex flex-row justify-center sm:justify-start items-center gap-2 mb-2">
+                            <svg class="w-1/6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#38bdf8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                              </svg>
+                              
+                            <p class="w-5/6 max-w-md text-xl mt-4 text-center sm:text-left text-gray-700 dark:text-slate-200">Starting from scratch, the members collaborate to build a complete three-dimensional model of the proposed CanSat, which complies with the mission statement.</p>
+                        </div>
+                    </article>
+                </div>
+        </section>
+
+        <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-1/2">
+
+        <section id="achievements" class="p-6 my-12 scroll-mt-20">
+            <h2 class="text-4xl font-orbitron uppercase tracking-wider font-bold text-center sm:text-5xl mb-6 text-gray-900 dark:text-white">Achievements</h2>
+        </section>
+
+        <hr class="mx-auto bg-gray-800 dark:bg-slate-50 w-1/2">
+
+        <section id="team" class="p-6 my-12">
+            <h2 class="text-4xl font-orbitron uppercase tracking-wider font-bold text-center sm:text-5xl mb-6 text-gray-900 dark:text-white">Our Team</h2>
         </section>
     </main>
 </body>
